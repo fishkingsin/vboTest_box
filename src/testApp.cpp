@@ -13,6 +13,7 @@ float cube[]={
 
 //--------------------------------------------------------------
 void testApp::setup(){
+	mode = ROTATE;
 	ofBackground(0);
 	bSqueezy = false;
 	center.set(0,0);//ofGetWidth()*0.5,ofGetHeight()*0.5);
