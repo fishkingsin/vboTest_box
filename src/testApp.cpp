@@ -122,7 +122,7 @@ void testApp::draw(){
 			int index = (j*GRID_WIDTH+i) * LENGTH;
 			for(int k = 0; k < 3 ; k++)
 			{
-				vbo.draw(GL_POLYGON, index+(4*k),4);
+				vbo.draw(GL_TRIANGLE_FAN, index+(4*k),4);
 			}
 		}
 	}
