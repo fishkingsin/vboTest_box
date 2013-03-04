@@ -1,8 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
-#define GRID_WIDTH  32
-#define GRID_HEIGHT 18
+#define GRID_WIDTH  16
+#define GRID_HEIGHT 16
 #define LENGTH		36
 class testApp : public ofBaseApp{
 	
