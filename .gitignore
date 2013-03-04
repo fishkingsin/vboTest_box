@@ -1,0 +1,4 @@
+*.app
+.DS_Store
+*.o
+*.a
