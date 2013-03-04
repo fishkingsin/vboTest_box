@@ -35,7 +35,8 @@ void testApp::setup(){
 				
 				_pos[index +k] = pos[index +k];
 
-				color[index + k] = ofFloatColor::fromHsb(1, 0, (k*1.0f/LENGTH));
+//				color[index + k] = ofFloatColor::fromHsb(1, 0, (k*1.0f/LENGTH));
+				color[index + k] = ofFloatColor::fromHsb((i*1.0f/GRID_WIDTH)*((GRID_HEIGHT-j)*1.0f/GRID_HEIGHT), 1, 0.5+(k*1.0f/LENGTH));
 			}
 			
 			
@@ -81,7 +82,7 @@ void testApp::update(){
 					pos[index+k] = _pos[index+k];
 				}
 				
-				color[index + k] = ofFloatColor::fromHsb((i*1.0f/GRID_WIDTH)*((GRID_HEIGHT-j)*1.0f/GRID_HEIGHT), sinf(ofGetElapsedTimef())*0.5+0.5, (k*1.0f/LENGTH)*sinf(ofGetElapsedTimef())*0.5+0.5);
+				
 			}
 			
 //			for(int l = 1 ; l < 3 ; l++)
@@ -99,7 +100,7 @@ void testApp::update(){
 			
 		}
 	}
-	ofSetWindowTitle(ofToString(ofGetFrameRate()));
+//	ofSetWindowTitle(ofToString(ofGetFrameRate()));
 }
 
 //--------------------------------------------------------------
